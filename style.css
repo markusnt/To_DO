@@ -1,0 +1,89 @@
+body {
+	line-height: 1.4em;
+	background: #e9e9e9;
+    width: 550px;
+	margin: 0 auto;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+    border: 0;
+	background: none;
+}
+
+.todoapp {
+    /* border: solid; */
+    border-radius: 10px;
+    background: white;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+	            0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.todoapp input::-webkit-input-placeholder {
+	font-style: italic;
+	color: #d1d1d1;
+}
+
+.new-todo, .edit {
+	width: 100%;
+	border: 0;
+	padding: 6px;
+	box-sizing: border-box;
+    outline: 0;
+}
+
+.new-todo {
+    font-size: 24px;
+    padding: 16px 16px 16px 60px;
+    border: none;
+    background: rgba(0, 0, 0, 0.003);
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+    outline: 0;
+}
+
+.main {
+	position: relative;
+	z-index: 2;
+	border-top: 1px solid #e6e6e6;
+}
+
+.toggle-all {
+	opacity: 0;
+	position: absolute;
+}
+
+.toggle-all + label {
+	width: 60px;
+	height: 34px;
+	font-size: 0;
+	position: absolute;
+	top: -50px;
+	left: -10px;
+	transform: rotate(90deg);
+}
+
+.toggle-all + label:before {
+	content: '❯';
+	font-size: 22px;
+	color: #e6e6e6;
+	padding: 27px;
+}
+
+.toggle-all:checked + label:before {
+	color: #05a000;
+}
+
+.todo-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.filters li {
+	display: inline;
+}
+
+.filters li a {
+	text-decoration: none;
+}
